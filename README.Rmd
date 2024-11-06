@@ -41,7 +41,7 @@ library(devtools)
 Next, install `advancedmeancalculator` from GitHub.
 
 ```{r}
-install_github("stat545ubc-2024/assignment-b2-gnikas01/advancedmeancalculator")
+install_github("stat545ubc-2024/assignment-b2-gnikas01")
 ```
 
 ## Example
