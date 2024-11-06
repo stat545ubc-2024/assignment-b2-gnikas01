@@ -1,0 +1,61 @@
+---
+output: github_document
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# advancedmeancalculator
+
+<!-- badges: start -->
+
+<!-- badges: end -->
+
+The goal of `advancedmeancalculator` package is to provide a simple and
+flexible function `calculate_mean` for calculating the mean of numeric
+vectors, with optional rounding capabilities. It handles NA values and
+allows users to specify the number of decimal places for rounding.
+
+## Installation
+
+To use the `advancedmeancalculator` package, first install and load the
+package `devtools`.
+
+```{r}
+#install and load devtools
+install.packages("devtools")
+library(devtools)
+```
+
+Next, install `advancedmeancalculator` from GitHub.
+
+```{r}
+install_github("stat545ubc-2024/assignment-b2-gnikas01", ref = "0.1.0")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+# Load the package
+library(advancedmeancalculator)
+
+# Generate a numerical vector with an NA value
+vector_NA <- c(1, 2, 3, NA, 5)
+
+# Usage of calculate_mean function with a vector containing an NA value
+example_result <- calculate_mean(vector_NA)
+print(paste("Mean of vector_NA:", example_result))
+```
